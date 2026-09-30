@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter 웹 앱 개발 및 GitHub Pages 배포기 - 개발 블로그</title>
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.8; margin: 0; padding: 20px; background-color: #f9f9f9; color: #333; }
+        header, main, footer { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        header { border-bottom: 2px solid #eee; margin-bottom: 20px; }
+        nav a { margin-right: 15px; color: #0066cc; text-decoration: none; font-weight: bold; }
+        h1 { font-size: 24px; color: #222; }
+        h2 { font-size: 18px; color: #0066cc; margin-top: 25px; }
+        p { margin-bottom: 15px; }
+        .app-card { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 15px; margin: 25px 0; }
+        .app-card a { color: #0066cc; font-weight: bold; text-decoration: none; }
+        footer { margin-top: 20px; text-align: center; color: #777; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="post1.html">Flutter 개발기</a>
+            <a href="post2.html">토깽이 게임 프로젝트</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Flutter 웹 앱을 활용한 개발 일기와 GitHub Pages 호스팅 경험</h1>
+            <p>최근 크로스 플랫폼 프레임워크인 Flutter를 활용하여 웹 애플리케이션을 제작하고, 이를 GitHub Pages에 배포하는 프로젝트를 진행했습니다. 단일 코드베이스로 모바일과 웹 환경을 동시에 지원할 수 있다는 점은 매우 큰 장점이었습니다.</p>
+
+            <h2>1. Flutter Web 선택 이유 및 특징</h2>
+            <p>Flutter는 Dart 언어를 기반으로 하며, 강력한 UI 렌더링 성능을 제공합니다. 기존 웹 개발 방식과 달리 CanvasKit이나 HTML DOM 방식을 선택하여 렌더링할 수 있어, 일관된 UI 경험을 유지하는 데 유용합니다.</p>
+
+            <h2>2. 배포 과정에서 겪은 주요 이슈</h2>
+            <p>GitHub Pages에 Flutter 웹을 배포할 때 가장 신경 써야 하는 부분은 라우팅 설정과 상대 경로 문제입니다. <code>index.html</code> 파일 내부의 base href 태그를 repository 이름에 맞게 수정해야 스타일이나 스크립트 리소스가 정상적으로 로드됩니다.</p>
+
+            <div class="app-card">
+                <h3>직접 제작한 Flutter 웹 앱 체험하기</h3>
+                <p>본 블로그에서 설명한 기술을 바탕으로 구축한 웹 애플리케이션입니다. 아래 링크를 통해 직접 기능을 테스트해 보실 수 있습니다.</p>
+                <a href="/jsh_flutter_app/" target="_blank">jsh Flutter 서비스 바로가기 &rarr;</a>
+            </div>
+
+            <h2>3. 향후 개선 방향 및 결론</h2>
+            <p>초기 로딩 속도 최적화를 위해 라이브러리 경량화 작업을 진행할 예정입니다. 지속적인 업데이트를 통해 사용자 경험을 개선하고 더 다양하고 유용한 기능을 제공하고자 합니다.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Developer Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
